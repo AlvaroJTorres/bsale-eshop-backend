@@ -11,22 +11,21 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 0) do
-
-  create_table "category", id: :integer, charset: "utf8", force: :cascade do |t|
-    t.string "name"
+  create_table 'category', id: :integer, charset: 'utf8', force: :cascade do |t|
+    t.string 'name'
   end
 
-  create_table "product", id: :integer, charset: "utf8", force: :cascade do |t|
-    t.string "name"
-    t.string "url_image"
-    t.float "price"
-    t.integer "discount"
-    t.integer "category"
-    t.index ["category"], name: "product_category"
-    t.index ["discount"], name: "product_discount"
-    t.index ["name"], name: "product_name"
-    t.index ["price"], name: "product_price"
+  create_table 'product', id: :integer, charset: 'utf8', force: :cascade do |t|
+    t.string 'name'
+    t.string 'url_image'
+    t.float 'price'
+    t.integer 'discount'
+    t.integer 'category'
+    t.index ['category'], name: 'product_category'
+    t.index ['discount'], name: 'product_discount'
+    t.index ['name'], name: 'product_name'
+    t.index ['price'], name: 'product_price'
   end
 
-  add_foreign_key "product", "category", column: "category", name: "product_ibfk_1"
+  add_foreign_key 'product', 'category', column: 'category', name: 'product_ibfk_1'
 end
