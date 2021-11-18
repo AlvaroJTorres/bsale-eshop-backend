@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: bsale_eshop_backend_production
-  username: bsale_eshop_backend
-  password: <%= ENV['BSALE_ESHOP_BACKEND_DATABASE_PASSWORD'] %>
+  database: bsale_test
+  username: bsale_test
+  password: bsale_test
