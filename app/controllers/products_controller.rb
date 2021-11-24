@@ -5,11 +5,9 @@ class ProductsController < ApplicationController
     render json: @products
   end
 
-  # GET /products/:category
+  # GET /products/search?searchTerm=:query
   def search
-    @category = Category.find { |category| category.name == params[:category] }
-
-    @products = Product.select { |product| product.category == @category.id }
+    @products = Product.where('name LIKE ?', "%#{params[:searchTerm]}%")
 
     render json: @products
   end
