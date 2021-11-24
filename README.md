@@ -68,10 +68,10 @@ http://localhost:3000/products
 ]
 ```
 
-Método GET /products/:category
+Método GET /products/search?searchTerm=:query
 
 ```shell
-http://localhost:3000/products/snack
+http://localhost:3000/products/search?searchTerm=mani
 ```
 
 ```json
