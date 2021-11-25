@@ -112,3 +112,7 @@ http://localhost:3000/categories
   { "id": 7, "name": "vodka" }
 ]
 ```
+
+## Instructions
+
+Instruction for how the App works can be found in this url: https://docs.google.com/document/d/1XST8TBVSanMrOumn3VfKxW5aucXpOHEmLF7HZqP_UGs/edit?usp=sharing
